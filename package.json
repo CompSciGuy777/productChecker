@@ -1,0 +1,21 @@
+{
+  "name": "productchecker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "pm2 start index.js"
+  },
+  "author": "Chris Davis",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "node-cron": "^2.0.3",
+    "pm2": "^4.5.0",
+    "puppeteer": "^5.5.0",
+    "winston": "^3.3.3"
+  }
+}
