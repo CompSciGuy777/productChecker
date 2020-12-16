@@ -606,6 +606,11 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
+dotenv@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+
 duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
@@ -1297,6 +1302,11 @@ node-cron@^2.0.3:
   dependencies:
     opencollective-postinstall "^2.0.0"
     tz-offset "0.0.1"
+
+node-env@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/node-env/-/node-env-0.1.6.tgz#dc6570f0f912e58a9e7b72beeed2602ecfd63e21"
+  integrity sha1-3GVw8PkS5Yqee3K+7tJgLs/WPiE=
 
 node-fetch@^2.6.1:
   version "2.6.1"

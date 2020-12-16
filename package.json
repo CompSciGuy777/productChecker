@@ -13,7 +13,9 @@
     "nodemon": "^2.0.6"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "node-cron": "^2.0.3",
+    "node-env": "^0.1.6",
     "pm2": "^4.5.0",
     "puppeteer": "^5.5.0",
     "winston": "^3.3.3"

@@ -1,14 +1,12 @@
-const fs = require("fs");
+const { createLogger, transports ,format} = require('winston');
 
-const infoStream = fs.appendFile("logs/info.txt");
-
-const Logger = {}
-Logger.info = function(msg) {
-  const message = new Date().toDateString('YYYY-MM-DD') + " : " + msg + "\n";
-  infoStream.once('open', () => {
-    infoStream.write(message);
-  })
-};
+const Logger = createLogger({
+  level: 'info',
+  format: format.json(),
+  transports: [
+    new transports.File({ filename: 'logs/info.txt' }),
+  ],
+});
 
 module.exports = {
     Logger

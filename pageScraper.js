@@ -11,11 +11,12 @@ const scraperObject = {
         await page.waitForTimeout(5000);
         const AddToCartButtonText =  await page.$eval('.add-to-cart-button', el => el.innerText);
         const soldOut = AddToCartButtonText === 'Sold Out'
-        console.log('is it sold out', soldOut, new Date().toISOString())
         if (!soldOut) {
-            logger.info('The item is back in Stock')
+            console.log(`The item is back in Stock ${new Date().toLocaleDateString()}:${new Date().toLocaleTimeString()}`)
+            logger.log('info', `The item is back in Stock ${new Date().toLocaleDateString()}:${new Date().toLocaleTimeString()}`)
         } else {
-            logger.info('The item is still sold Out')
+            console.log(`The item is still sold Out ${new Date().toLocaleDateString()}:${new Date().toLocaleTimeString()}`)
+            logger.log('info', `The item is still sold Out ${new Date().toLocaleDateString()}:${new Date().toLocaleTimeString()}`)
         }
         page.close();
     }
