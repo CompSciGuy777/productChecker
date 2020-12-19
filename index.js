@@ -13,5 +13,5 @@ cron.schedule(CronTime, () => {
 let browserInstance = browserObject.startBrowser();
 
 // Pass the browser instance to the scraper controller
-scraperController(browserInstance);
+scraperController(browserInstance, URL);
 });
